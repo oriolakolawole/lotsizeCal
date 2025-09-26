@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 from datetime import datetime
 
 def get_usd_exchange_rates(api_key):
@@ -58,7 +59,7 @@ def get_usd_exchange_rates(api_key):
 # Usage
 if __name__ == "__main__":
     # Replace with your actual API key
-    API_KEY = "6a58c1a54574ec61644c72a552f66615"
+    API_KEY = os.getenv("MY_API_KEY")
     
     try:
         exchange_rates = get_usd_exchange_rates(API_KEY)
@@ -71,3 +72,4 @@ if __name__ == "__main__":
         
     except Exception as e:
         print(f"Failed to get exchange rates: {e}")
+
