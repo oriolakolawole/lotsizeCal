@@ -1,6 +1,6 @@
 # Lot Size Calculator
 
-A web-based trading tool that calculates the correct position size for any trade based on your account balance, risk percentage, and stop-loss distance — with live exchange rate support for multi-currency accounts.
+A web-based trading tool that calculates the correct position size for any trade based on your account balance, risk percentage, and stop-loss.
 
 **[Live Demo](https://oriolakolawole.github.io/lotsizeCal)**
 
@@ -12,15 +12,15 @@ Position sizing is one of the most critical aspects of risk management in tradin
 
 $$\text{Lot Size} = \frac{\text{Account Balance} \times \text{Risk \%}}{\text{Stop Loss (pips)} \times \text{Pip Value}}$$
 
-Exchange rates are fetched and stored in `exchangeRates.json` so the calculator works correctly regardless of your account currency.
+Exchange rates are fetched and stored in `exchangeRates.json`, so the calculator works correctly regardless of the instrument being traded.
 
 ---
 
 ## Features
 
 - **Instant lot size calculation** based on account balance, risk %, and stop-loss
-- **Multi-currency support** via periodically updated exchange rates
-- **Clean web interface** — works in any browser, no installation needed
+- **Multiple instrument support** via periodically updated exchange rates
+- **Clean web interface** : works in any browser, no installation needed
 - **Automated rate updates** via a Python backend script and GitHub Actions
 
 ---
@@ -72,7 +72,7 @@ python update_rates.py
 | `index.html` | Main calculator UI |
 | `script.js` | Calculation logic and dynamic UI |
 | `style.css` | Styling and layout |
-| `exchangeRates.json` | Cached exchange rates for multi-currency support |
+| `exchangeRates.json` | Cached exchange rates for multiple pairs support |
 | `update_rates.py` | Python script to fetch and refresh exchange rates |
 | `requirements.txt` | Python dependencies for `update_rates.py` |
 | `.github/workflows` | GitHub Actions for automated rate updates |
