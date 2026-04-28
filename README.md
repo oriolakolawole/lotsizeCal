@@ -1,12 +1,12 @@
-# 🧮 Lot Size Calculator
+# Lot Size Calculator
 
 A web-based trading tool that calculates the correct position size for any trade based on your account balance, risk percentage, and stop-loss distance — with live exchange rate support for multi-currency accounts.
 
-🔗 **[Live Demo](https://oriolakolawole.github.io/lotsizeCal)**
+**[Live Demo](https://oriolakolawole.github.io/lotsizeCal)**
 
 ---
 
-## 💡 What It Does
+## What It Does
 
 Position sizing is one of the most critical aspects of risk management in trading. This calculator takes three inputs and instantly tells you the correct lot size to use so you never risk more than your defined percentage per trade.
 
@@ -16,7 +16,7 @@ Exchange rates are fetched and stored in `exchangeRates.json` so the calculator 
 
 ---
 
-## ✨ Features
+## Features
 
 - **Instant lot size calculation** based on account balance, risk %, and stop-loss
 - **Multi-currency support** via periodically updated exchange rates
@@ -25,7 +25,7 @@ Exchange rates are fetched and stored in `exchangeRates.json` so the calculator 
 
 ---
 
-## 🖥️ How to Use
+## How to Use
 
 1. Enter your **account balance** and select your account currency
 2. Enter your **risk percentage** (e.g. 1%)
@@ -35,7 +35,7 @@ Exchange rates are fetched and stored in `exchangeRates.json` so the calculator 
 
 ---
 
-## 🛠️ Local Setup
+## Local Setup
 
 ```bash
 # Clone the repository
@@ -53,7 +53,7 @@ No build step required — it runs directly in the browser.
 
 ---
 
-## 🔄 Exchange Rate Updates
+## Exchange Rate Updates
 
 Exchange rates are maintained in `exchangeRates.json` and updated automatically via a **GitHub Actions** workflow that runs `update_rates.py` on a schedule.
 
@@ -65,7 +65,7 @@ python update_rates.py
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | File | Purpose |
 |---|---|
@@ -79,7 +79,7 @@ python update_rates.py
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -95,6 +95,6 @@ python update_rates.py
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool is for **educational and personal use only** and does not constitute financial advice. Always apply your own risk management judgment when trading.
